@@ -1,11 +1,10 @@
 import "reflect-metadata";
-
 import { ApolloServer } from "@apollo/server";
 import { startServerAndCreateNextHandler } from "@as-integrations/next";
 import { ApolloServerPluginLandingPageLocalDefault } from "@apollo/server/plugin/landingPage/default";
 import { MeResolver } from "../../apollo/resolvers";
 import { buildSchema } from "type-graphql";
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 const schema = await buildSchema({
   resolvers: [MeResolver],
@@ -15,7 +14,15 @@ const apolloServer = new ApolloServer({
   plugins: [ApolloServerPluginLandingPageLocalDefault()],
   introspection: true,
 });
-const handler = startServerAndCreateNextHandler<NextRequest>(apolloServer, {
-  context: async (req) => ({ req }),
+
+const handler = startServerAndCreateNextHandler(apolloServer, {
+  context: async (req: NextRequest) => ({ req }),
 });
-export { handler as GET, handler as POST };
+
+export async function GET(request: NextRequest, context: any) {
+  return handler(request);
+}
+
+export async function POST(request: NextRequest, context: any) {
+  return handler(request);
+}
