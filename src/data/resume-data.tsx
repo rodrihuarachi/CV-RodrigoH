@@ -25,7 +25,7 @@ export const RESUME_DATA = {
   location: "Buenos Aires, Argentina",
   locationLink: "https://www.google.com/maps/place/Buenos+Aires/",
   about:
-    "Data Engineer and Data Analyst",
+    "Data Engineer and Data Analyst    ",
   summary:
     "I'm a dedicated Data Analyst and Data Engineer with over 2 years of experience delivering innovative, client-focused solutions. I strive to provide accurate and valuable results, working closely with clients to understand their needs and guide them toward achieving their goals. My commitment goes beyond simply addressing analytical challenges; I build comprehensive solutions that enhance data management and utilization. I'm always driven to exceed expectations, ensuring efficient, transparent service tailored to the unique demands of each project.",
   avatarUrl: "https://avatars.githubusercontent.com/u/69877961?v=4",
@@ -70,17 +70,16 @@ export const RESUME_DATA = {
       company: "CoreBI",
       link: "https://corebi.com.ar/",
       badges: ["Remote"],
-      title: "Data Engineer",
+      title: "Data Engineer for Pan American Energy",
       logo: ConsultlyLogo,
       start: "2024",
       end: null,
-      description:
-        "Client: Pan American Energy \
-        Data Warehouse Monitoring, including: \
-        • Job and Packages control through SQL Server. \
-        • Data Analysis using Excel and Power BI. \
-        • Presentation of monthly executive report. \
-        • Smooth client and the team communication.",
+      description: [
+        "Data Warehouse Monitoring, including:",
+        "• Job and Packages control through SQL Server.",
+        "• Data Analysis using Excel and Power BI.",
+        "• Presentation of monthly executive report.",
+        "• Smooth client and the team communication."],
     },
     {
       company: "HUARA Muebles",
@@ -90,11 +89,13 @@ export const RESUME_DATA = {
       logo: ParabolLogo,
       start: "2022",
       end: "2023",
-      description:
-        "• I developed a system in Excel to manage income, expenses, salaries and production expenses. \
-        •  Created annual financial visualization highlighting earnings, debt and key trends. \
-        •  Design a tool that automatically adjusts furniture prices based on changes. \
-        •  I implemented a budget system in Excel with material price tables, automatic calculations and printing options.",
+      description:[
+        "Several tasks were developed:",
+        "• I developed a system in Excel to manage income, expenses, salaries and production expenses.",
+        "•  Created annual financial visualization highlighting earnings, debt and key trends.",
+        "•  Design a tool that automatically adjusts furniture prices based on changes.",
+        "•  I implemented a budget system in Excel with material price tables, automatic calculations and printing options."
+      ]
     },
     
   ],
@@ -121,7 +122,7 @@ export const RESUME_DATA = {
         "Power BI",
       ],
       description:
-        "Development of a data solution (Data Pipeline, Database, Data Warehouse, Dashboard, Predictive Models, etc.) to be able to effectively communicate the relationship of human migrations with the different socioeconomic and geopolitical aspects. ",
+        "Development of a data solution to be able to effectively communicate the relationship of human migrations with the different socioeconomic and geopolitical aspects. ",
       logo: ParabolLogo,
       link: {
         label: "migratory-flows.com",
